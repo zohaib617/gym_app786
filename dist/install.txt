@@ -1,0 +1,19 @@
+python code pip install pyinstaller
+
+
+
+pyinstaller --noconfirm --onefile --windowed ^
+--add-data "gym.db;." ^
+--add-data "session.txt;." ^
+--add-data "FingerprintTemplates;FingerprintTemplates" ^
+--add-data "images;images" ^
+main.py
+
+
+
+pyinstaller --noconfirm --onefile --windowed ^
+--add-data "gym.db;." ^
+--add-data "session.txt;." ^
+--add-data "FingerprintTemplates;FingerprintTemplates" ^
+--add-data "images;images" ^
+login.py
